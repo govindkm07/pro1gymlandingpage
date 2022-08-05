@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Fitness</title>
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+     body{
+        margin: 0px;
+        padding: 0px;
+        background: url('gym1.jpg');
+        color: white;
+        background-size: cover;
+
+     }
+
+     
+
+     .left{
+     /* border: 2px solid red; */
+     color: white;
+     display: inline-block;
+     position: absolute;
+     left: 35px;
+     top: 35px;
+     height: 100px;
+     width: 100px;
+     font-size: 40px;
+     font-style: italic;
+     }
+
+     .mid{
+     /* border: 2px solid green; */
+     color: white;
+     display: block;
+     width: 33%;
+     margin: 20px auto;
+     }
+     .right{
+    /* border: 2px solid blue; */
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+     }
+
+
+     .navbar{
+        display: inline-block;
+     }
+
+     .navbar li{
+        display: inline-block;
+        
+     }
+
+     .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+     }
+
+     .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: red;
+     }
+
+     .btn{
+        margin: 0px 15px;
+        color: white;
+        background-color: black;
+        padding: 7px 15px 7px 15px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+     }
+
+     .btn:hover{
+        background-color: rgb(71, 64, 64);
+        color: red;
+     }
+
+
+     .container{
+        border: 1px solid white;
+        margin: 2px 2px;
+        padding: 15px 15px;
+        width: 29%;
+        border-radius: 15px;
+        text-align: center;
+        margin-left: 725px;
+        margin-top: 100px;
+
+     }
+
+     .formgroup .btn{
+        display: block;
+        width: 20%;
+        margin: 20px auto;
+
+     }
+     
+
+     .formgroup input{
+        font-size: 19px;
+        text-align: center;
+        display: block;
+        width: 250px;
+        border-radius: 10px;
+        margin: 9px auto;
+        padding: 8px;
+     }
+</style>
+
+<body>
+   <header class="header">
+    <!-- for logo -->
+    <div class="left">
+LOGO 
+    </div>
+        <!-- for navbar -->
+    <div class="mid">
+     <ul class="navbar">
+        <li><a href="#">Home </a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        
+     </ul>
+    </div>
+       <!-- for search bar/button  -->
+    <div class="right">
+<button class="btn"> Call Us</button>
+<button class="btn"> Email Us</button>
+    </div>
+   </header>
+
+   <div class="container">
+     <h1>
+        Join the Best Gym
+     </h1>
+     <form action="noaction.php">
+        <div class="formgroup">
+            <input type="text" name="Name" placeholder="Enter Your Name">
+            <input type="text" name="Your Addr" placeholder="Enter Your Address">
+            <input type="text" name="Email" placeholder="Enter Your Email">
+            <input type="text" name="" placeholder="Enter Your Mobile">
+            <button class="btn">Submit</button>
+        </div>
+     </form>
+   </div>
+</body>
+
+</html>
